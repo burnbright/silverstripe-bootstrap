@@ -1,0 +1,19 @@
+{
+  "name": "boostraptheme",
+  "version": "0.1.0",
+  "authors": [
+    "Jeremy Shipman <jeremy@burnbright.net>"
+  ],
+  "description": "SilverStripe bootstrap theme",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "BSD-2-Clause",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
