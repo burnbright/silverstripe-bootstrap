@@ -26,6 +26,11 @@ module.exports = function(grunt) {
     },
     less: {
       all: {
+        options: {
+          sourceMap: true,
+          compress: true,
+          sourceMapRootpath: "../"
+        },
         files: {
           "css/site.css" : "less/site.less"
         }
