@@ -15,6 +15,8 @@ From within the theme directory, in terminal:
  * Run `npm install` to install grunt and associated requirements.
  * Run `bower install` to get all bower packages.
 
+Source maps can be used, as can [chrome workspaces](https://developer.chrome.com/devtools/docs/workspaces).
+
 ## Usage
 
 From within the theme directory, in terminal:
