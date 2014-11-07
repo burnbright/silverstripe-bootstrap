@@ -23,3 +23,6 @@ From within the theme directory, in terminal:
 
  * Run `grunt` to start the default watch task.
 
+## Also
+
+ * http://css2less.cc/ is useful for quickly converting CSS to less.
