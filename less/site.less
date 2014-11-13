@@ -1,12 +1,6 @@
 // Bootstrap and Font Awesom
 @import "../bower_components/bootstrap/less/bootstrap.less";
-
 @import "bootstrap-silverstripe.less";
-@import "fonts.less";
-
-body{
-	font-family: "Open Sans";
-}
 
 //site-wide variables
 @brand-mainaction: #fac810;
@@ -21,6 +15,13 @@ body{
 @text-lightblue: lighten(@text-blue, 20%);
 @text-darkblue: darken(@text-blue, 10%);
 @sectionpad: 20px;
+
+@import "fonts.less";
+@import "typography.less";
+
+body{
+	font-family: "Open Sans";
+}
 
 //components
 @import "components/header.less";
