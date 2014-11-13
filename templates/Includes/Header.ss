@@ -6,6 +6,7 @@
 					$SiteConfig.Title
 				</a></h2>
 			</div>
+			<% if $Menu(1) %>
 			<div class="col-md-8">
 				<nav class="navbar navbar-default navbar-right" role="navigation">
 					<div class="container-fluid">
@@ -13,6 +14,7 @@
 					</div>
 				</nav>
 			</div>
+			<% end_if %>
 		</div>
 
 	</div>
