@@ -1,0 +1,16 @@
+@xl-factor: 1.4;
+@padding-xl-vertical: @padding-large-vertical * @xl-factor;
+@padding-xl-horizontal: @padding-large-horizontal * @xl-factor;
+@font-size-xl: @font-size-large * @xl-factor;
+@line-height-xl: @line-height-large * @xl-factor;
+@border-radius-xl: @border-radius-large * @xl-factor;
+
+.btn{
+	&.btn-xl{
+		.button-size(@padding-xl-vertical; @padding-xl-horizontal; @font-size-xl; @line-height-xl; @border-radius-xl);
+	}
+	//give narrow buttons some extra width
+	&.btn-wide{
+		min-width: 30%;
+	}
+}
