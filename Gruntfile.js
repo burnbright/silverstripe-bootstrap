@@ -17,7 +17,7 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: ['javascript/**/*.js', '!javascript/site.js'],
+        files: ['javascript/**/*.js', '!javascript/site.js', '!javascript/site.min.js'],
         tasks: ['concat', 'uglify']
       },
       less: {
