@@ -10,6 +10,7 @@ module.exports = function(grunt) {
           'bower_components/modernizr/modernizr.js',
           'bower_components/bootstrap/dist/js/bootstrap.js',
           'bower_components/stellar.js/src/jquery.stellar.js',
+          'bower_components/wow/dist/wow.js',
           'javascript/main.js'
         ],
         dest: "javascript/site.js"

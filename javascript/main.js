@@ -5,4 +5,5 @@ $(function(){
 			responsive: true
 		});
 	}
+	new WOW().init();
 });
