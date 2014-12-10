@@ -1,0 +1,44 @@
+/* LESS / Social Media Brand Colors */
+//found here https://www.competethemes.com/social-media-colors
+
+@social-networks: 'twitter','facebook','googleplus','pinterest','linkedin','youtube','vimeo','tumblr','instagram','flickr','dribbble','quora','foursquare','forrst','vk','wordpress','stumbleupon','yahoo','blogger','soundcloud';
+
+@twitter-brand-color: #00aced;
+@facebook-brand-color: #3b5998;
+@googleplus-brand-color: #dd4b39;
+@pinterest-brand-color: #cb2027;
+@linkedin-brand-color: #007bb6;
+@youtube-brand-color: #bb0000;
+@vimeo-brand-color: #aad450;
+@tumblr-brand-color: #32506d;
+@instagram-brand-color: #517fa4;
+@flickr-brand-color: #ff0084;
+@dribbble-brand-color: #ea4c89;
+@quora-brand-color: #a82400;
+@foursquare-brand-color: #0072b1;
+@forrst-brand-color: #5B9A68;
+@vk-brand-color: #45668e;
+@wordpress-brand-color: #21759b;
+@stumbleupon-brand-color: #EB4823;
+@yahoo-brand-color: #7B0099;
+@blogger-brand-color: #fb8f3d;
+@soundcloud-brand-color: #ff3a00;
+
+
+@import "for";
+
+&{
+	.for(@social-networks); .-each(@network) {
+		@name: e(@network);
+		@brand-color: "@{name}-brand-color";
+		.color-@{name} {
+			background-color: @@brand-color !important;
+		}
+		.soft-color-@{name} {
+			background-color: average(@@brand-color, #aaa) !important;
+			&:hover{
+				background-color: @@brand-color !important;
+			}
+		}
+	}
+}

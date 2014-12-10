@@ -1,45 +1,26 @@
 // bower components
-@import "../bower_components/bootstrap/less/bootstrap.less";
-@import "../bower_components/bootswatch/flatly/bootswatch.less";
-@import "../bower_components/bootswatch/flatly/variables.less";
-@import "../bower_components/lesshat/build/lesshat-prefixed.less";
-@import "../bower_components/animate.less/animate.less";
-@import "bootstrap-silverstripe.less";
+@bower: "../bower_components";
+@import "@{bower}/bootstrap/less/bootstrap.less";
+@import "@{bower}/lesshat/build/lesshat-prefixed.less";
+@import "@{bower}/animate.less/animate.less";
+@import (less) "@{bower}/Hover/css/hover.css";
 
-//site-wide variables
-@brand-mainaction: #fac810;
-@brand-action: #15a4e8;
+//libraries - globally reusable things
+@import "lib/social-media-colors.less";
+@import "lib/icons.less";
+@import "lib/xl-button.less";
+@import "lib/fonts.less";
+@import "lib/typography.less";
+@import "lib/bootstrap-silverstripe.less";
+@import "lib/page-transitions.less";
 
-@back-darkblue: #0090bf;
-@back-lightblue: #cce9f1;
-@back-footblue: #26a1ca;
-
-@text-yellow: #fcd434;
-@text-blue: #028ebf;
-@text-lightblue: lighten(@text-blue, 20%);
-@text-darkblue: darken(@text-blue, 10%);
-@sectionpad: 20px;
-
-
-
-@thumbnail-padding: 0;
-@thumbnail-border: 0;
-@thumbnail-border-radius: 5px;
-
-@import "xl-button.less";
-@import "fonts.less";
-@import "typography.less";
-
-body{
-	font-family: "Open Sans";
-	.animated;
-	.fadeIn;
-}
-
-//components
+//components - specific sections
 @import "components/header.less";
 @import "components/navigation.less";
 @import "components/content.less";
 @import "components/homepage.less";
 @import "components/sidebar.less";
 @import "components/footer.less";
+
+//custom
+@import "custom.less";
