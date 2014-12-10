@@ -1,0 +1,45 @@
+@import "../../bower_components/ionicons/less/ionicons.less";
+@ionicons-font-path: "../fonts/ionicons";
+
+@ion-default-size: 1em;
+@ion-scale-factor: 1.5; 
+
+.ion-square {
+	font-size: @ion-default-size;
+	width: @ion-default-size * @ion-scale-factor;
+	height: @ion-default-size * @ion-scale-factor;
+	line-height: @ion-default-size * @ion-scale-factor;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	.transition(all .5s ease);
+}
+
+.ion-circle {
+	.ion-square;
+	.lh-border-radius(100%);
+}
+
+.ion-squarcle {
+	.ion-square;
+	.lh-border-top-left-radius(0.5em);
+	.lh-border-bottom-right-radius(0.5em);
+}
+
+.sociallinks{
+ 	ul{
+ 		margin:0;
+ 		padding:0;
+ 	}
+ } 
+ .sociallinks_network{
+	display:inline;
+ }
+
+  .sociallinks_link{
+  	display: inline-block;
+  	&,&:focus{
+  		text-decoration: none;
+  	}
+  }

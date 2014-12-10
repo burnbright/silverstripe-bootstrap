@@ -54,6 +54,13 @@ module.exports = function(grunt) {
             src: '**',
             dest: 'fonts/open-sans',
             filter: 'isFile'
+          },
+          {
+            expand: true,
+            cwd: 'bower_components/ionicons/fonts',
+            src: '**',
+            dest: 'fonts/ionicons',
+            filter: 'isFile'
           }
         ]
       }
