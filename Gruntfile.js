@@ -50,10 +50,9 @@ module.exports = function(grunt) {
         files: [
           {
             expand: true,
-            //flatten: true,
             cwd: 'bower_components/open-sans-fontface/fonts',
             src: '**',
-            dest: 'fonts/',
+            dest: 'fonts/open-sans',
             filter: 'isFile'
           }
         ]
