@@ -1,0 +1,1 @@
+<span class="credit"><a href="http://www.burnbright.net">Website</a> by <a href="http://www.burnbright.net">burnbright.net</a></span>

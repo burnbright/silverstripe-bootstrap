@@ -1,52 +1,37 @@
-<footer role="contentinfo">
-	
-	<div class="navigation collapse navbar-collapse">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-					<% include Navigation %>
-				</div>
-			</div>
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<% loop Menu(1) %>
+				<% if URLSegment != home && URLSegment != contact %>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<h4 class="footer_heading"><a href="$Link">$MenuTitle</a></h4>
+						<% if ShowChildren && Children %>
+							<ul class="footer_links">
+								<% loop Children %>
+									<li class="footer_link"><a href="$Link">$MenuTitle</a></li>
+								<% end_loop %>
+							</ul>
+						<% end_if %>
+					</div>
+				<% end_if %>
+			<% end_loop %>
 		</div>
 	</div>
-
 	<% if SiteConfig.SocialLinks %>
-		<div class="container details">
+		<div class="container">
 			<div class="row">
-				<div class="col-md-4 footbox">
-					$SiteConfig.Col1
-				</div>
-				<div class="col-md-4 footbox">
-					$SiteConfig.Col2
-				</div>
-				<div class="col-md-4">
-					<% loop SiteConfig.SocialLinks %>
-						<a href="$URL" class="socialicon socialicon-$Identifier" title="$Name" target="_blank"></a>
-					<% end_loop %>
-					
-					<div class="Footer_Illustration"></div>
-
+				<div class="col-sm-12">
+					<% include SocialLinksList %>
 				</div>
 			</div>
 		</div>
 	<% end_if %>
-
-	<div class="container copyright">
+	<div class="container copyright_credits">
 		<div class="row">
 			<div class="col-lg-12">
-				<p><small>&copy; Copyright {$Now.Year}. {$SiteConfig.Title}. All rights reserved.</small></p>
+				<p><small><% include Copyright %> - <% include Credits %></small></p>
 			</div>
 		</div>
 	</div>
-	<div class="container credits">
-		<div class="row">
-			<div class="col-lg-12">
-				<p><small>
-					<span class="credit"><a href="http://www.burnbright.net">website development</a> by <a href="http://www.burnbright.net">Burnbright</a></span>,
-					<span class="credit"><a href="http://www.edendesign.co.nz">website design</a> by <a href="http://www.edendesign.co.nz">Eden Design</a></span>
-				</small></p>
-			</div>
-		</div>
-	</div>
-
 </footer>
+$BetterNavigator

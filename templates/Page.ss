@@ -7,9 +7,10 @@
 <% include Head %>
     <body class="$ClassName">
         <% include Header %>
-        $Layout
+        <div class="layout">
+        	$Layout
+        </div>
         <% include Footer %>
-        <% include BackToTopButton %>
 		<script type="text/javascript" src="$ThemeDir/javascript/site.min.js"></script>
     </body>
 </html>

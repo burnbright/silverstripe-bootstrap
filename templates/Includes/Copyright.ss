@@ -1,0 +1,1 @@
+<span class="copyright">&copy; Copyright {$Now.Year} | All Rights Reserved</span>
