@@ -5,12 +5,10 @@
 @line-height-xl: @line-height-large * @xl-factor;
 @border-radius-xl: @border-radius-large * @xl-factor;
 
-.btn{
-	&.btn-xl{
-		.button-size(@padding-xl-vertical; @padding-xl-horizontal; @font-size-xl; @line-height-xl; @border-radius-xl);
-	}
-	//give narrow buttons some extra width
-	&.btn-wide{
-		min-width: 30%;
-	}
+.btn-xl{
+	.button-size(@padding-xl-vertical; @padding-xl-horizontal; @font-size-xl; @line-height-xl; @border-radius-xl);
+}
+//give narrow buttons some extra width
+.btn-wide{
+	min-width: 30%;
 }
