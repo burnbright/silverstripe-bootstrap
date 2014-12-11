@@ -1,7 +1,6 @@
 # Beautiful BurnBright Boostrap Boilerplate
 
-A basic SilverStripe bolilerplate, running on Bootstrap.
-Bootstrap uses the less css preprocessor.
+A basic SilverStripe bolilerplate theme, running on Bootstrap. Uses less as the css preprocessor.
 
 ## Requirements
 
