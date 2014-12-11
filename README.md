@@ -10,6 +10,12 @@ Bootstrap uses the less css preprocessor.
 
 ## Setup
 
+Install via composer:
+
+```sh
+composer install burnbright/silverstripe-bootstrap
+```
+
 From within the theme directory, in terminal:
 
  * Run `npm install` to install grunt and associated requirements.
@@ -22,6 +28,7 @@ Source maps can be used, as can [chrome workspaces](https://developer.chrome.com
 From within the theme directory, in terminal:
 
  * Run `grunt` to start the default watch task.
+ * `grunt copy` will copy fonts to the right directories.
 
 ## Also
 
