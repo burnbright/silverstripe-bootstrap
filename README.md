@@ -29,6 +29,6 @@ From within the theme directory, in terminal:
  * Run `grunt` to start the default watch task.
  * `grunt copy` will copy fonts to the right directories.
 
-## Also
+## Useful to konw
 
- * http://css2less.cc/ is useful for quickly converting CSS to less.
+http://css2less.cc/ is useful for quickly converting CSS to less. You can also install it as a command-line tool: https://github.com/thomaspierson/libcss2less
