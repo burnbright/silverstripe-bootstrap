@@ -5,9 +5,11 @@
 
 		&.right {
 			float: right;
+			margin-left: 1em;
 		}
 		&.left {
 			float: left;
+			margin-right: 1em;
 		}
 		&.leftAlone {
 			float: left;
@@ -23,5 +25,9 @@
 			margin-right: auto;
 			display: block;
 		}
+	}
+	//don't let headings be affected by left/right aligned images
+	h1,h2,h3,h4,h5,h6{
+		clear: left;
 	}
 }
