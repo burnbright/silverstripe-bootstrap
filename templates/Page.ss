@@ -6,7 +6,8 @@
 <% require themedCSS("site") %>
 <% include Head %>
     <body class="$ClassName">
-        <% include Header LogoURL='mysite/images/logo.jpg' %>
+        <% include Header %>
+        <%-- include Header LogoURL='mysite/images/logo.jpg' --%>
         <div class="layout">
         	$Layout
         </div>
