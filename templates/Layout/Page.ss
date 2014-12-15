@@ -1,6 +1,6 @@
 <div class="container content">
     <div class="row">
-        <div class="col-lg-8" role="main">
+        <div class="col-lg-8 typography" role="main">
         	<h1 class="pagetitle">$Title</h1>
         	$Content
         	$Form
