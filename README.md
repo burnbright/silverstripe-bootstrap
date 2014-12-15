@@ -12,7 +12,7 @@ A basic SilverStripe bolilerplate theme, running on Bootstrap. Uses less as the 
 Install via composer:
 
 ```sh
-composer install burnbright/silverstripe-bootstrap
+composer require burnbright/silverstripe-bootstrap
 ```
 
 From within the theme directory, in terminal:
