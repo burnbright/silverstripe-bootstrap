@@ -4,7 +4,7 @@
 			<div class="col-sm-5 col-xs-10 header_logo">
 				<a href="home" title="$SiteConfig.Title">
 					<% if LogoURL %>
-						<img src="$LogoURL" alt="$SiteConfig.Title">
+						<img class="img-responsive" src="$LogoURL" alt="$SiteConfig.Title">
 					<% else %>
 						<h2>$SiteConfig.Title</h2>
 					<% end_if %>
