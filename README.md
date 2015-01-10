@@ -1,4 +1,4 @@
-# Beautiful BurnBright Boostrap Boilerplate
+# Beautiful BurnBright Bootstrap Boilerplate
 
 A basic SilverStripe bolilerplate theme, running on Bootstrap. Uses less as the css preprocessor.
 
