@@ -18,11 +18,9 @@
 			<% if $Menu(1) %>
 				<div class="col-sm-7 col-xs-12">
 					<nav class="navbar navbar-default navbar-right collapse navbar-collapse" role="navigation" id="Navigation">
-						
-							<div class="" >
-								<% include Navigation IncludeChildren=true %>		
-							</div>
-						
+						<div class="" >
+							<% include Navigation IncludeChildren=true %>		
+						</div>
 					</nav>
 				</div>
 			<% end_if %>
