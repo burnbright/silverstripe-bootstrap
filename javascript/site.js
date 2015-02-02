@@ -14039,4 +14039,15 @@ $(function(){
 		});
 		new WOW().init();
 	}
+
+	//submit a form automatically when input(s) are changed
+	$("form.submitonchange").each(function(){
+		var $form = $(this);
+		$form.find(":input").change(function(){
+			$form.submit();
+
+		})
+		$form.find(".Actions").hide();
+	});
+
 });
