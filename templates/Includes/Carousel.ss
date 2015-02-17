@@ -18,7 +18,12 @@
 				<% if Link && Up.LinkSlides %></a><% end_if %>
 				<% if Up.ShowCaptions %>
 					<div class="carousel-caption">
-						<% if Content %>$Content<% else %>$Title<% end_if %>
+						<% if Title %>
+							<h3>$Title</h3>
+						<% end_if %>
+						<% if SubTitle %>
+						    <p>$SubTitle</p>
+						<% end_if %>
 					</div>
 				<% end_if %>
 			</div>
@@ -28,11 +33,11 @@
 	<!-- Controls -->
 	<% if ShowControls %>
 		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			<span class="ion ion-chevron-left" aria-hidden="true"></span>
+			<span class="ion ion-chevron-left glyphicon-chevron-left" aria-hidden="true"></span>
 			<span class="sr-only">Previous</span>
 		</a>
 		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			<span class="ion ion-chevron-right" aria-hidden="true"></span>
+			<span class="ion ion-chevron-right glyphicon-chevron-right" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		</a>
 	<% end_if %>
