@@ -1,4 +1,4 @@
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div class="carousel slide" data-ride="carousel">
 
 	<!-- Indicators -->
 	<% if ShowIndicators %>
@@ -14,7 +14,7 @@
 		<% loop Me %>
 			<div class="item<% if First %> active<% end_if %>">
 				<% if Link && Up.LinkSlides %><a href="$Link"><% end_if %>
-					<img src="$CroppedImage(550,300).URL" alt="$Title">
+					<img src="$Image.CroppedImage(680,480).URL" alt="$Title">
 				<% if Link && Up.LinkSlides %></a><% end_if %>
 				<% if Up.ShowCaptions %>
 					<div class="carousel-caption">
