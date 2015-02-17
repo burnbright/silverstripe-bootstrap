@@ -1,10 +1,11 @@
-<div class="carousel slide" data-ride="carousel">
+<div id="{$dataClass}-carousel" class="carousel slide" data-ride="carousel">
 
 	<!-- Indicators -->
 	<% if ShowIndicators %>
 		<ol class="carousel-indicators">
 			<% loop Me %>
-				<li data-target="#carousel-example-generic" data-slide-to="$Pos"<% if First %> class="active"<% end_if %>></li>
+				<li data-target="#{$Top.dataClass}-carousel" data-slide-to="$Pos(0)"<% if First %> class="active"<% end_if %>>
+				</li>
 		 	<% end_loop %>
 		</ol>
 	<% end_if %>
@@ -32,11 +33,11 @@
 	
 	<!-- Controls -->
 	<% if ShowControls %>
-		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		<a class="left carousel-control" href="#{$dataClass}-carousel" role="button" data-slide="prev">
 			<span class="ion ion-chevron-left glyphicon-chevron-left" aria-hidden="true"></span>
 			<span class="sr-only">Previous</span>
 		</a>
-		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		<a class="right carousel-control" href="#{$dataClass}-carousel" role="button" data-slide="next">
 			<span class="ion ion-chevron-right glyphicon-chevron-right" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		</a>
