@@ -1,5 +1,5 @@
 <% if IncludeFormTag %>
-<form class="form" $AttributesHTML>
+<form class="form form-horizonal" $AttributesHTML>
 <% end_if %>
 	<% if Message %>
 	<div id="{$FormName}_error" class="alert alert-error message $MessageType">
@@ -17,9 +17,11 @@
 	</fieldset>
 
 	<% if Actions %>
-	<% loop Actions %>
-		$Field
-	<% end_loop %>
+		<div class="Actions text-center">
+			<% loop Actions %>
+				$Field
+			<% end_loop %>
+		</div>
 	<% end_if %>
 <% if IncludeFormTag %>
 </form>
