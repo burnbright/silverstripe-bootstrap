@@ -12,5 +12,8 @@
 		"screenshots": [
 			"thumbnail.png"
 		]
+	},
+	"suggest" : {
+		"burnbright/silverstripe-bootstrap-shop" : "Bootstrap theme files for the shop module"
 	}
 }
