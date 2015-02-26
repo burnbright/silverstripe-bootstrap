@@ -2,6 +2,7 @@
 	"name": "burnbright/silverstripe-bootstrap",
 	"description": "Boilerplate theme, using bootstrap",
 	"type": "silverstripe-theme",
+	"license": "MIT",
 	"require": {
 		"composer/installers": "*",
 		"silverstripe/framework": ">=3.1"
