@@ -16,16 +16,6 @@ module.exports = function(grunt) {
         dest: "javascript/site.js"
       }
     },
-    watch: {
-      scripts: {
-        files: ['javascript/**/*.js', '!javascript/site.js', '!javascript/site.min.js'],
-        tasks: ['concat', 'uglify']
-      },
-      less: {
-        files: ['less/**/*.less'],
-        tasks: ['less']
-      }
-    },
     less: {
       all: {
         options: {
@@ -64,15 +54,37 @@ module.exports = function(grunt) {
           }
         ]
       }
+    },
+    watch: {
+      scripts: {
+        files: ['javascript/**/*.js', '!javascript/site.js', '!javascript/site.min.js'],
+        tasks: ['concat', 'uglify'],
+        options: {
+          interrupt: true
+        }
+      },
+      less: {
+        files: ['less/**/*.less'],
+        tasks: ['less'],
+        options: {
+          interrupt: true
+        }
+      },
+      configFiles: {
+        files: [ 'Gruntfile.js', 'config/*.js' ],
+        options: {
+          reload: true
+        }
+      }
     }
   });
 
   // load plugins
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
   grunt.registerTask('default', ['watch']);
