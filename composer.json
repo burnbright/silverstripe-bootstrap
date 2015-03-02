@@ -14,6 +14,7 @@
 		]
 	},
 	"suggest" : {
-		"burnbright/silverstripe-bootstrap-shop" : "Bootstrap theme files for the shop module"
+		"burnbright/silverstripe-bootstrap-shop" : "Bootstrap theme files for the shop module",
+		"jonom/silverstripe-betternavigator" : "Useful navigator tool for SilverStripe"
 	}
 }
