@@ -2,12 +2,12 @@
 
 [![Join the chat at https://gitter.im/burnbright/silverstripe-bootstrap](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/burnbright/silverstripe-bootstrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-A basic SilverStripe bolilerplate theme, running on Bootstrap. Uses less as the css preprocessor.
+A basic SilverStripe bolilerplate theme, running on Bootstrap. Uses less as the css preprocessor. Uses bower to bring in external libraries, and also contains a collection of internal libraries (see `less/lib` folder). Pick and choose what you want on a per-project basis.
 
 ## Requirements
 
+ * [grunt](http://gruntjs.com/) (and it's dependencies: npm, node)
  * [bower](http://bower.io/)
- * [grunt](http://gruntjs.com/)
 
 ## Setup
 
