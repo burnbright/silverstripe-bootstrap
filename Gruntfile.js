@@ -19,7 +19,8 @@ module.exports = function(grunt) {
     less: {
       all: {
         options: {
-          sourceMap: true,
+          //only add this in when you really need it, as it takes appr. 1.5s extra to execute
+          //sourceMap: true,
           compress: true,
           sourceMapRootpath: "../"
         },
