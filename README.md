@@ -1,5 +1,7 @@
 # Beautiful BurnBright Bootstrap Boilerplate
 
+[![Join the chat at https://gitter.im/burnbright/silverstripe-bootstrap](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/burnbright/silverstripe-bootstrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A basic SilverStripe bolilerplate theme, running on Bootstrap. Uses less as the css preprocessor.
 
 ## Requirements
