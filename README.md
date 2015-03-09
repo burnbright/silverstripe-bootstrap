@@ -43,3 +43,5 @@ There are a few approaches you could take to customising this theme:
 ## Useful to know
 
 http://css2less.cc/ is useful for quickly converting CSS to less. You can also install it as a command-line tool: https://github.com/thomaspierson/libcss2less
+
+This theme draws some inspiration from DNA's [FrontEnd Boilerplate](https://github.com/dnadesign/dna_frontend_boilerplate)
