@@ -39,6 +39,13 @@ There are a few approaches you could take to customising this theme:
  * Drop the theme .git folder, and commit the entire theme to your project.
  * Implement changes inside a `bootstrap_mysite` theme. This approach allows you to later on update the base bootstrap theme seperately. This "subtheme" folder will be fairly light weight, and can be committed to the site repo.
 
+## Supporting IE8
+
+Bootstrap 3 somewhat supports IE8 out of the box.
+
+If you are using jQuery, make sure your bower is setup to use jQuery a version < 2.
+You can either include Respond.js to polyfill media query breakpoints, or you can extract the css of a specific breakpoint and include it using IE conditional tags.
+
 
 ## Useful to know
 
