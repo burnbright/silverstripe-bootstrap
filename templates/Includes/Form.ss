@@ -2,11 +2,11 @@
 <form class="form form-horizonal" $AttributesHTML>
 <% end_if %>
 	<% if Message %>
-	<div id="{$FormName}_error" class="alert alert-error message $MessageType">
+	<div id="{$FormName}_error" class="alert message $MessageType <% if $MessageType == 'good' %>alert-success<% else_if $MessageType == 'bad' %>alert-danger<% else_if $MessageType == 'warning' %>alert-warning<% end_if %>">
 		$Message
 	</div>
 	<% else %>
-	<div id="{$FormName}_error" class="alert alert-error message $MessageType" style="display: none"></div>
+	<div id="{$FormName}_error" class="alert message $MessageType" style="display: none"></div>
 	<% end_if %>
 
 	<fieldset>
