@@ -17,6 +17,7 @@
 			<% end_loop %>
 		</div>
 	</div>
+	<%-- requires sociallinks module --%>
 	<% if SiteConfig.SocialLinks %>
 		<div class="container">
 			<div class="row">
