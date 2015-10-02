@@ -7,7 +7,7 @@
 <% include Head %>
 	<body class="$ClassName">
 		<div class="container">
-			<div class="col-sm-4 col-sm-push-4">
+			<div class="col-sm-6 col-sm-push-3 col-md-4 col-md-push-4">
 				<h1 class="pageTitle">$Title</h1>
 				$Content
 				$Form
