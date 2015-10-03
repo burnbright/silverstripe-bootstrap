@@ -1,3 +1,5 @@
+@vertical-gap: @grid-gutter-width / 2;
+
 p.message{
 	padding: 15px;
 	.bg-info;
@@ -14,7 +16,7 @@ p.message{
 
 form{
 	.Actions{
-		margin-top: 20px;
+		margin-top: @vertical-gap;
 	}
 	textarea{
 		resize: none;
@@ -36,8 +38,14 @@ form{
 }
 
 .actionsrow{
-	padding: 15px 0;
-	.btn{
-		margin: 15px 0;
+	margin: @vertical-gap 0;
+}
+
+.form-inline.form-always-inline{
+	.form-group, fieldset, .form-control {
+		display: inline-block;
+	}
+	.form-control{
+		width: auto;
 	}
 }
