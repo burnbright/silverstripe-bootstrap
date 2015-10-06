@@ -6,7 +6,7 @@ A basic SilverStripe bolilerplate theme, running on Bootstrap. Uses less as the 
 
 ## Requirements
 
- * [grunt](http://gruntjs.com/) (and it's dependencies: npm, node)
+ * [grunt](http://gruntjs.com/) or [gulp](http://gulpjs.com/) (and their dependencies: npm, node)
  * [bower](http://bower.io/)
 
 ## Setup

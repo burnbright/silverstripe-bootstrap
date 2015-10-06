@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<% require themedCSS("site") %>
+<% require themedCSS(site) %>
 <% include Head %>
 	<body class="$ClassName">
 		<% include Header %>
