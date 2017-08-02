@@ -36,10 +36,11 @@ gulp.task('less', function(){
 		files.push(
 			path.join(mysitepath, "less/custom.less")
 		);
-	}	
+	}
 
 	return gulp.src(files)
 		.pipe(concat("site.less")) //join less files into one
+		.pipe(sourcemaps.init())
 		.pipe(less({
 			paths: [
 				'bower_components',
@@ -47,25 +48,37 @@ gulp.task('less', function(){
 			]
 			//TODO: add plugins
 		}))
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(outputs.css));
 });
 
 gulp.task('scripts', function() {
 
+	// TODO: ordering etc
 	var files = [
 		inputs.bower + "/jquery/dist/jquery.js",
+		inputs.bower + "/velocity/velocity.js",
 		inputs.bower + "/modernizr/modernizr.js",
 		inputs.bower + "/bootstrap/dist/js/bootstrap.js",
 		inputs.bower + "/stellar.js/src/jquery.stellar.js",
 		inputs.bower + "/wow/dist/wow.js",
-		inputs.js + "/main.js"
+		mysitepath + "/main.js"
 	];
 
+	// include code found in mysite
+	// TODO: ordering
+	if(ismysite) {
+		files.push(path.join(mysitepath, "javascript/**/*.js"));
+		files.push("!" + path.join(mysitepath, "javascript/**/*.min.js"));
+	}
+
 	return gulp.src(files)
+		.pipe(sourcemaps.init())
 		.pipe(jshint())
 		.pipe(concat('site.min.js'))
     	.pipe(stripDebug())
    		.pipe(uglify())
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(outputs.js));
 });
 
@@ -77,10 +90,10 @@ gulp.task('watch', function() {
 	], ['less']);
 
 	gulp.watch([
-		inputs.js + "/**/*.js"
+		mysitepath + "/**/*.js",
+		"!"+mysitepath + "/**/*.min.js"
 	], ['scripts']);
 
 });
 
 gulp.task('default', ['watch', 'less', 'scripts']);
-
