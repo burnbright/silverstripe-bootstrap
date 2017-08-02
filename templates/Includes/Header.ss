@@ -9,7 +9,7 @@
 						<h2>$SiteConfig.Title</h2>
 					<% end_if %>
 				</a>
-			</div>	
+			</div>
 			<div class="nav-open col-xs-2 visible-xs">
 				<button class="btn btn-lg navbar-toggle" data-toggle="collapse"  data-target="#Navigation">
 					<i class="ion ion-navicon-round"></i> menu

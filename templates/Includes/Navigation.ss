@@ -20,7 +20,7 @@
 		<% end_if %>
 	<% end_loop %>
 	<% if IncludeAccountLink %>
-		<li class="">
+		<li class="nav_accountlink">
 			<a href="account" title="$Title.XML">Account</a>
 		</li>
 	<% end_if %>
