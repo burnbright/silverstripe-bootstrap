@@ -96,7 +96,7 @@ module.exports = function(grunt) {
 			files: ["less/**/*.less"],
 			tasks: ["less"],
 			options: {
-				nterrupt: true
+				interrupt: true
 			}
 		},
 		configFiles: {
@@ -115,6 +115,11 @@ module.exports = function(grunt) {
 		configs.watch.less.files.push(
 			path.join(mysitepath, "less/custom.less")
 		);
+
+		configs.concat.site.src += [
+			path.join(mysitepath, "javascript/**/*.js"),
+			"!"+path.join(mysitepath, "javascript/**/*.min.js"),
+		];
 	}
 
 	// Project configuration.
